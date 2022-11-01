@@ -1,0 +1,321 @@
+:root{
+    --min-width:1318px;
+    --margin:15vw;
+    font-size: 10px;
+}
+
+body{
+    margin:0;
+    font-family:"PT Sans";
+    font-weight:700;
+}
+
+menu{
+    margin:0;
+    padding:0;
+    background-color: #243B93;
+    font-size:1.6rem;
+    min-height: 56px; 
+    overflow:auto;
+}
+
+button{
+    display: block;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #fff;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #243B93;
+    text-align: center;
+    border: 0;
+}
+
+.container{
+    width:70vw;/*1321px*/
+    margin: auto;
+    min-width:var(--min-width);
+}
+
+menu a{
+    color:#fff;
+    text-decoration: none;
+    vertical-align: top;
+    display: inline-block;
+    height: 64px;
+}
+
+.menu__list{
+    display:flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.menu__list img{
+    height:50px;
+    padding:7px 0;
+    vertical-align: middle;
+}
+
+.logo{
+    padding: 7px 0;
+    margin-right: 8.3vw;/*158px;
+     /* 3vw 7px var(--margin) ; */
+}
+
+.lang{
+    float:right;
+    margin-left: 3vw;
+}
+
+.lang>span{
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    vertical-align: middle;
+}
+
+.menu__item{
+    height: 19px;
+    /* float:right; */
+    display: inline-block;
+    min-width:100px;
+    width:9vw;/*170px;*/
+    text-align: center;
+    margin:21px 0;
+    vertical-align: middle;
+}
+
+.menu__item:nth-last-child(2){
+    margin: 12px 0;
+}
+
+.menu__item>a{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+main{
+    background-color: #FBE4FF;
+    margin:0;
+    clear:left;
+    clear:right;
+}
+
+
+.up{
+    background-color: #300C6A4D;
+    width: 101px;
+    height: 101px;
+    border-radius: 51px;
+    text-align: center;
+    /* position: relative; */
+    position: fixed; 
+     bottom: 100px;
+    right: 150px;
+    z-index: 1;
+    /* right:-62px; */
+}
+
+.up > img{
+    margin: 26px;
+}
+
+.booking__title{
+    background-color: #BFF0FF;
+    color: #202846;
+}
+
+.office__title{
+    background: linear-gradient(0.25turn,#FFE601,#55D6FF);
+    color: #243B93;
+}
+
+.contacts__title{
+    background: linear-gradient(90deg, #54D6FF 0%, #FFE600 100%);
+    color: #243B93;
+}
+
+h1{
+    vertical-align: middle;
+    font-size: 4.4rem;
+    font-weight: 400;
+    font-style: italic;
+    padding: 16px 0;
+    margin: 0;
+}
+
+.dropdownmenu{
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 36px;
+    padding: 10px;
+    margin: 27px 0;
+    text-align: center;
+    vertical-align:top;
+}
+
+.dropdownmenu>img{
+    padding:12px;
+    float:right;
+}
+
+.booking__item{
+    background: linear-gradient(0.25turn,#A9CBD6, #01AFE6);
+    padding: 14px 52px 21px;
+    /* padding: 14px 2.7vw 21px; */
+    position: relative;
+    margin-bottom: 42px;
+}
+
+.booking__item:last-child{
+    margin-bottom: 39px;
+}
+
+.booking__item_photo{
+    width: 23vw;
+    min-width: 397px;
+    /* height: 12.8vw;  */
+    /* width: 447px; */
+    /* width: 33%; */
+    padding-top: 19px;
+    height: 246px;
+    vertical-align: top;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+.booking__item_photo>img{
+    height:100%;
+}
+
+.booking__item_content{
+     width:39vw; 
+     min-width: 672px;
+     /* width:56%; */
+    /* margin-left:1.5vw; */
+    margin-left:30px;
+    display: inline-block;
+}
+
+.booking__item:hover .star{
+    filter: brightness(0) saturate(100%) invert(76%) sepia(91%) saturate(686%) hue-rotate(2deg) brightness(106%) contrast(110%);
+}
+
+.booking__item:hover .more{
+    background-color: #EF075B;
+}
+
+.booking__item:hover{
+    box-shadow: 0 0 70px #2CBDEB;
+    background: #2CBDEB;
+}
+
+.booking__item_content>h2{
+    font-size:3.6rem;
+    line-height: 46.58px;
+    font-style: italic;
+    margin:0;
+    color:#353C57;
+    border-bottom: 3px solid #fff;
+}
+
+.booking__item_content_block{
+    background-color: #EDFBFF;
+    margin-top:10px;
+    display: inline-block;
+    height: 205px;
+    overflow:auto;
+}
+
+.booking__item_content_block>p{
+    width:82%;
+    margin: 10px 16px;
+    font-size: 2.2rem;
+    line-height: 28px;
+    font-weight: 400;
+    color: #202846;
+}
+
+.star{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    /* width:48px; */
+}
+
+.more{
+    width: 210px;
+    height: 46px;
+    line-height: 2 rem;
+    position: absolute;
+    bottom: 11px;
+    right: -33px;
+}
+
+form{
+    text-align: center;
+}
+
+.office__form{
+    background: linear-gradient(#859EFF,#69FFD280);
+    margin: 36px auto 0;
+    padding:46px 81px 44px 21px; 
+    display: flex;
+}
+
+.office__ava{
+    margin: 31px auto;
+}
+
+.office__ava > img{
+    margin: 0 auto 9px;
+}
+
+.office__ava > button{
+    margin: 26px auto 0;
+    width: 250px;
+}
+
+.settings__btn{
+    background-color:#EF075B;
+}
+
+.office__data{
+    width:54%;
+    color:#353C57;
+}
+
+.office__data > div{
+    font-size: 3.6rem;
+    line-height: 80px;
+    font-style: italic;
+    text-align: left;
+    overflow:auto;
+    height: 80px;
+    border-bottom: 3px solid #fff;
+}
+
+.office__data > div> span{
+    font-weight: 400;
+}
+
+.office__exit{
+    width: 174px;
+    text-transform: uppercase;
+    margin: 19px auto 56px;
+}
+
+footer{
+    background-color: #243B93;
+    color: #fff;
+    font-size: 1.6rem;
+    height: 65px;
+    line-height: 65px;
+    letter-spacing: 1.6px;
+}
+
+footer > div > div{
+    white-space: pre;
+}
