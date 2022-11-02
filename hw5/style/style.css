@@ -59,8 +59,7 @@ menu a{
 
 .logo{
     padding: 7px 0;
-    margin-right: 8.3vw;/*158px;
-     /* 3vw 7px var(--margin) ; */
+    margin-right: 8.3vw;
 }
 
 .lang{
@@ -101,6 +100,11 @@ main{
     clear:right;
 }
 
+.sticky{
+    position: sticky;
+    top:15px;
+    z-index: 1;
+}
 
 .up{
     background-color: #300C6A4D;
@@ -108,12 +112,12 @@ main{
     height: 101px;
     border-radius: 51px;
     text-align: center;
-    /* position: relative; */
+    position: relative;
+    display: block;
     position: fixed; 
-     bottom: 100px;
-    right: 150px;
-    z-index: 1;
-    /* right:-62px; */
+    bottom: 100px;
+    right: 12vw;
+    z-index: 3;
 }
 
 .up > img{
@@ -163,7 +167,6 @@ h1{
 .booking__item{
     background: linear-gradient(0.25turn,#A9CBD6, #01AFE6);
     padding: 14px 52px 21px;
-    /* padding: 14px 2.7vw 21px; */
     position: relative;
     margin-bottom: 42px;
 }
@@ -175,9 +178,6 @@ h1{
 .booking__item_photo{
     width: 23vw;
     min-width: 397px;
-    /* height: 12.8vw;  */
-    /* width: 447px; */
-    /* width: 33%; */
     padding-top: 19px;
     height: 246px;
     vertical-align: top;
@@ -191,10 +191,8 @@ h1{
 }
 
 .booking__item_content{
-     width:39vw; 
-     min-width: 672px;
-     /* width:56%; */
-    /* margin-left:1.5vw; */
+    width:39vw; 
+    min-width: 672px;
     margin-left:30px;
     display: inline-block;
 }
@@ -306,6 +304,57 @@ form{
     text-transform: uppercase;
     margin: 19px auto 56px;
 }
+
+.contacts > .container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.contacts__map{
+    width:38%;
+    height: 290px;
+    border-radius: 40px;
+    border: 3px solid #243B93;
+    margin: 25px 0 28px;
+}
+
+.contacts__data{
+    width: 62%;
+    font-size: 30px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 9px;
+}
+
+.contacts__data > div{
+    margin-top: 16px;
+}
+
+.contacts__data a{
+    text-decoration: none;
+    color: #000;
+}
+
+.contacts_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts_top > div{
+    margin-right: 150px;
+}
+
+.contacts_lined{
+    border-bottom: 3px solid #202846;
+    font-size: 32px;
+}
+
+.contacts__address{
+    display: inline-block;
+}
+
 
 footer{
     background-color: #243B93;

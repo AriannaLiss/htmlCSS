@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" lang="uk">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>booking.ua</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -24,16 +24,12 @@
     </menu>
 
     <main>
-
-        <!-- <div class="container__up">
-            <div class="container"> -->
-                <a class="up" href="#"><img src="./img/arrow.svg" alt="up"></a>
-            <!-- </div>  
-        </div> -->
+        
+        <a class="up" href="#"><img src="./img/arrow.svg" alt="up"></a>
 
         <section class="booking">
 
-            <div class="booking__title">
+            <div class="booking__title sticky">
                 <div class="container">
                     <h1>Забронювати будиночок</h1>
             
@@ -119,7 +115,7 @@
         </section>
 
         
-        <div class="office__title">
+        <div class="office__title sticky">
             <div class="container">
                 <h1>Особистий кабінет</h1>
             </div>  
@@ -148,11 +144,31 @@
         
         <section class="contacts">
 
-        <div class="contacts__title">
-            <div class="container">
-                <h1>Контакти</h1>
+            <div class="contacts__title sticky">
+                <div class="container">
+                    <h1>Контакти</h1>
+                </div>
             </div>
-        </div>
+
+            <div class="container">
+                <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.7125640980303!2d30.50901411562063!3d50.427826796876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1e4f6914e5%3A0xbcdcd80ffeaf9ae3!2z0LLRg9C70LjRhtGPINCa0LDQt9C40LzQuNGA0LAg0JzQsNC70LXQstC40YfQsCwgNCwg0JrQuNGX0LIsINCj0LrRgNCw0ZfQvdCwLCAwMjAwMA!5e0!3m2!1suk!2scz!4v1667388367551!5m2!1suk!2scz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contacts__data">
+                    <div class="contacts_top">
+                        <div>
+                            <div class="contacts_lined">Телефон</div>
+                            <a href="tel:+38(097)009-89-83">+38(097)009-89-83</a>
+                        </div>
+                        <div>
+                            <div class="contacts_lined">Ел. пошта</div>
+                            <a href="mailto:hello@gmail.com">hello@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contacts__address">
+                        <div class="contacts_lined">Адреса офісу</div>
+                        <a href="https://goo.gl/maps/HAQoUDe7HBK65tim6" target="_blank">м. Київ, вул. Малевича, буд. 4</a>
+                    </div>
+                </div>
+            </div>
 
          </section>
 
