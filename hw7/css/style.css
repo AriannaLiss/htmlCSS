@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+:root{
+    --grey:#CCCCCC;
+}
+
+html, body{
+    min-height:100%;
+    width:100%;
+    font-size:10px;
+}
+
+body{
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+    background: linear-gradient(112.23deg, #3E718E 0%, #64969B 100%);
+}
+
+p{
+    margin: .7rem auto;
+}
+
+::placeholder{
+    color:var(--grey);
+}
+
+.flex{
+    display:flex;
+}
+
+.card{
+    width: 70%;
+    min-width: 900px;
+    margin: 6% auto;
+    background-color: white;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.main{
+    font-weight: 400;
+    font-size: 1.6rem;
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-size: 82%;
+    width:55%;
+    padding-right: 1rem;
+}
+
+.logo{
+    display: inline-block;
+    font-size: 1.5em;
+    background: linear-gradient(93.38deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
+    margin: 1rem 3rem;
+    font-weight: 700;
+}
+
+.form{
+    width: 70%;
+    margin: 4rem auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+label{
+    display: block;
+}
+
+input, select, button{ 
+    width: 100%;
+    line-height: 2.4rem;
+    border-radius: 0.4rem;
+    box-shadow: 0px 2px 2px 2px #CCCCCC1A;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+input, select{
+    height: 2rem;
+    border: 1px solid var(--grey);
+    background: transparent;
+    margin: 0.3rem 0;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+button{
+    margin: 7rem auto 2rem;
+    background-color: #27485D;
+    border: 1px solid #284A5E;
+    color:#fff;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 0.8rem 1rem;
+    font-family: 'Space Grotesk';
+}
+
+.prompt{
+    color: var(--grey);
+    font-size:1rem;
+    line-height: 1.6rem;
+}
+
+.grey{
+    color:#A8A8A8;
+    font-size: 1.2rem;
+}
+
+select:invalid{
+    color: var(--grey);
+}
+
+.login{
+    color:#C4C4C4;
+    text-align: center;
+}
+
+.login a{
+    margin:0 1rem;
+    color:#476D73;
+    font-weight: 700;
+}
+
+.quote{
+    background: linear-gradient(160.42deg, #517879 0%, #214159 100%);
+    width: 45%;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin: 0.5rem;
+    box-shadow: 0 0 1rem 1rem #4E7577;
+}
+
+.menu{
+    justify-content:flex-end;
+}
+
+.menu a{
+    margin: 1.2rem;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #000;
+    transition: color 0.5s;
+}
+
+.quote__main{
+    width:80%;
+    opacity: 80%;
+    margin: 35% auto;
+    vertical-align: middle;
+}
+
+.quote__text{
+    font-size: 4.8rem;
+    line-height: 6rem;
+    text-shadow: 0.2rem 0.2rem #fff2;
+}
