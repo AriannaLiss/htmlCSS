@@ -184,7 +184,6 @@ header .hire{
 }
 
 .menu__item:hover{
-    /* background-color: yellow; */
     background: linear-gradient(94.3deg, var(--yellow) 0%, rgba(255, 123, 66, 0.76) 99.33%);
 }
 
@@ -332,7 +331,6 @@ footer, footer a{
 footer{
     background-color: #1C1C1C;
     padding:14rem 0 9rem;
-    /* margin: 25rem 0 0; */
 }
 
 .footer{
