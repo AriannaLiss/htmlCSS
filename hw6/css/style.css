@@ -8,24 +8,24 @@
     --oWhite: #FFFFFF14;
     --lGrey:#383E45;
     --llGrey:#D4D4D4;
-    --oYellow:#FFB74280
+    --oYellow:#FFB74280;
+    font-size: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
 }
 
 body{
     background-color: var(--black);
     color:var(--white);
-    font-size: 10px;
-    margin: 2.3rem 4%;
-    transition: all 1s;
-    font-family: 'Poppins';
-    font-weight: 400;
+    margin:0;
 }
 body a{
     color: var(--yellow);
 }
 .container{
-    width: 95%;
     margin: 0 auto;
+    width: 90%;
+    min-width:680px;
 }
 .flex{
     display: flex;
@@ -42,17 +42,13 @@ body a{
     /* text-align: left; */
 }
 
-.middle{
-    align-items: center;
-}
-
 .center{
     text-align: center;
     justify-content: center;
 }
 
 section{
-    margin: 7rem auto;
+    margin: 14rem auto;
 }
 
 .title{
@@ -98,6 +94,10 @@ h2{
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.8rem;
+    margin-top: 2.3rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
 .headerMenu a{
     text-decoration: none;
@@ -180,7 +180,9 @@ header .hire{
     align-content: center;
     margin: 1rem;
     cursor:pointer;
-    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu__item p:first-child{
@@ -209,7 +211,7 @@ header .hire{
 
 .menu__icon > img{
     height:75%;
-    margin:25%;
+    margin:18%;
 }
 
 .menu__arrow{
@@ -316,6 +318,9 @@ footer, footer a{
 
 footer{
     justify-content: space-between;
+    background-color: #1C1C1C;
+    padding:14rem 0 9rem;
+    /* margin: 25rem 0 0; */
 }
 
 footer h1{
@@ -335,7 +340,7 @@ footer h2{
     margin:0 0 1rem;
 }
 
-footer > div{
+.footer__item{
     width:23%;
     margin:0 1rem;
 }
