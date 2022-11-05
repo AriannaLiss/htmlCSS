@@ -29,6 +29,7 @@ h1:hover{
 
 .container{
     width:80%;
+    min-width: 732px;
     margin: 3% auto;
 }
 
@@ -39,7 +40,7 @@ h1:hover{
 }
 
 .gallery > div{
-    width: 23%;
+    width: 20%;
     height: 40vh;
     overflow: hidden;
     margin: 2%;
@@ -56,15 +57,27 @@ img, iframe{
 }
 
 iframe{
-    height:100vh;
+    height:60vh;
     overflow: hidden;
     transition: all 1s;
+    margin: 2%;
+    width: 96%;
 }
 
 iframe:hover{
     width: 110%;
-    height: 110vh;
+    height: 70vh;
     margin: 0 -5%;
+}
+
+.link{
+    text-align: right; 
+    transition: all 1s;
+    margin :1rem 2%;
+}
+
+.link:hover{
+    font-size:2em;
 }
 
 footer{
