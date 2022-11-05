@@ -19,32 +19,15 @@ body{
     color:var(--white);
     margin:0;
 }
+
 body a{
     color: var(--yellow);
 }
+
 .container{
     margin: 0 auto;
     width: 90%;
     min-width:680px;
-}
-.flex{
-    display: flex;
-    justify-content: space-between;
-}
-.wrap{
-    flex-wrap: wrap;
-}
-.right{
-    justify-content: flex-end;
-}
-.top{
-    align-items: flex-start;
-    /* text-align: left; */
-}
-
-.center{
-    text-align: center;
-    justify-content: center;
 }
 
 section{
@@ -68,28 +51,26 @@ section{
     color:var(--black);
 }
 
-h1{
-    font-family: 'Inter';
+h1, h2{
     font-weight: 700;
     font-size: 4.8rem;
     text-transform: capitalize;
     color: var(--white);
+}
+
+h1{
+    font-family: 'Inter';
     line-height: 6rem;
     margin:1rem auto 3rem;
-    text-align: center;
 }
 
 h2{
     font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 4.8rem;
-    text-transform: capitalize;
-    color: var(--white);
     line-height: 4.5rem;
     margin: 0.2rem 1rem 2.5rem;
 }
 
-.headerMenu{
+.header{
     text-transform: capitalize;
     font-family: 'Poppins';
     font-weight: 600;
@@ -99,20 +80,29 @@ h2{
     display: flex;
     align-items: center;
 }
-.headerMenu a{
+
+.header a{
     text-decoration: none;
     color:var(--white);
 }
-.headerMenu img{
+
+.header img{
     vertical-align: middle;
     margin-right: 6rem;
 }
-.headerMenu__item{
+
+.header__list{
+    display:flex;
+}
+
+.header__item{
     margin: 0 1rem;
 }
-.headerMenu__item:hover>a{
+
+.header__item:hover>a{
     color:var(--yellow);
 }
+
 .hire{
     padding: 0 2.6rem;
     font-weight: 700;
@@ -164,7 +154,9 @@ header .hire{
 
 .menu{
     margin: 10rem auto 20rem;
-    align-items: stretch;;
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu__item{
@@ -223,23 +215,28 @@ header .hire{
     vertical-align: middle;
 }
 
-.foto{
+.about, .skills{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__foto{
     width: 45%;
     margin: 4rem 0 2rem -3rem;
 }
 
-.foto > img{
+.about__foto > img{
     width:100%;
 }
 
-.about{
-    width:50%;
+.content{
+    width:52%;
     font-family: 'Poppins';
     font-weight: 400;
     margin-bottom: 7rem;
 }
 
-.about > p{
+.text{
     margin: 1rem 1rem 6rem;
     font-size: 1.6rem;
 }
@@ -250,8 +247,13 @@ header .hire{
     color: var(--llGrey);
 }
 
-.skills{
+.skills__icons{
     width:48%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content:flex-start;
+    gap:0;
 }
 
 .skill{
@@ -260,9 +262,7 @@ header .hire{
     border-radius: 1rem;
     width:5rem;
     height:5rem;
-    align-self:center;
     margin:0.5rem;
-    text-align: center;
 }
 
 .skill:hover{
@@ -274,8 +274,14 @@ header .hire{
     max-width: 100%;
 }
 
+.works, .customers{
+    text-align:center;
+}
+
 .works__menu{
     margin:0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .works__item{
@@ -289,6 +295,11 @@ header .hire{
 .works__item:hover{
     background-color: var(--yellow);
     color: var(--black);
+}
+
+.sites{
+    display: flex;
+    justify-content: center;
 }
 
 .sites>div, .comments>div{
@@ -305,6 +316,8 @@ header .hire{
 
 .comments{
     margin-top: 5rem;
+    display: flex;
+    justify-content: center;
 }
 
 footer, footer a{
@@ -317,10 +330,14 @@ footer, footer a{
 }
 
 footer{
-    justify-content: space-between;
     background-color: #1C1C1C;
     padding:14rem 0 9rem;
     /* margin: 25rem 0 0; */
+}
+
+.footer{
+    justify-content: space-between;
+    display:flex;
 }
 
 footer h1{
