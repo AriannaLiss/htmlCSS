@@ -1,18 +1,24 @@
 
 :root{
-    --color:#191862;
+    /* --color:#191862; */
+    --color: black;
+    font-size:10px;
 }
 
 body{
     margin:0;
-    background: rgb(53,35,129);
+    background: rgba(53,35,129,.2);
     background: linear-gradient(90deg, rgba(53,35,129,1) 0%, rgba(219,125,191,0.9430365896358543) 35%, rgba(0,157,255,0.49205619747899154) 100%);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
 }
 
+
 h1{
-    margin: 10%;
+    margin: 4vh auto;
     font-size: 5rem;
     transition: font-size 1s;
     opacity: 70%;
@@ -23,8 +29,27 @@ a{
     text-decoration: none;
 }
 
+img{
+    width:100%;
+}
+
+.pic{
+    height: 10vh;
+    transition: height 1s;
+    margin: 4vh;
+}
+
+.pic img{
+    height:100%;
+    width: auto;
+}
+
+.pic:hover{
+    height:12vh;
+}
+
 h1:hover{
-    font-size:7em;
+    font-size:6em;
 }
 
 .container{
@@ -33,51 +58,29 @@ h1:hover{
     margin: 3% auto;
 }
 
-.gallery{
+.gallery__row{
     display:flex;
     justify-content: space-between;
     align-items:flex-end;
 }
 
-.gallery > div{
-    width: 20%;
-    height: 40vh;
+.gallery__item, .gallery__item_horizontal{
+    width: 23%;
     overflow: hidden;
     margin: 2%;
     transition: all 1s;
+} 
+
+.gallery__item_horizontal{
+    width:48%;
 }
 
-.gallery > div:hover{
-    width: 30%;
-    height: 50vh;
+.gallery__item:hover{
+    width: 28%;
 }
 
-img, iframe{
-    width:100%;
-}
-
-iframe{
-    height:60vh;
-    overflow: hidden;
-    transition: all 1s;
-    margin: 2%;
-    width: 96%;
-}
-
-iframe:hover{
-    width: 110%;
-    height: 70vh;
-    margin: 0 -5%;
-}
-
-.link{
-    text-align: right; 
-    transition: all 1s;
-    margin :1rem 2%;
-}
-
-.link:hover{
-    font-size:2em;
+.gallery__item_horizontal:hover{
+    width: 55%;
 }
 
 footer{
@@ -85,13 +88,19 @@ footer{
     padding:10px;
     transition: all 1s;
     opacity: 70%;
+    width:100%;
+    font-size:1rem;
 }
 
 footer a{
     color: white;
 }
 
+.bold{
+    font-size:3rem;
+}
+
 footer:hover{
-    padding: 20px;
-    font-size: 2em;
+    padding: 12px;
+    font-size: 3rem;
 }
