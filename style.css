@@ -54,7 +54,6 @@ h1:hover{
 
 .container{
     width:80%;
-    min-width: 732px;
     margin: 3% auto;
 }
 
@@ -64,22 +63,24 @@ h1:hover{
     align-items:flex-end;
 }
 
+.gallery__subrow{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
 .gallery__item, .gallery__item_horizontal{
-    width: 23%;
+    width: 48%;
     overflow: hidden;
     margin: 2%;
     transition: all 1s;
-} 
+}
 
 .gallery__item_horizontal{
     width:48%;
 }
 
-.gallery__item:hover{
-    width: 28%;
-}
-
-.gallery__item_horizontal:hover{
+.gallery__item:hover,.gallery__item_horizontal:hover{
     width: 55%;
 }
 
@@ -103,4 +104,24 @@ footer a{
 footer:hover{
     padding: 12px;
     font-size: 3rem;
+}
+
+@media screen and (max-width:750px){
+    :root{
+        font-size: 8px;
+    }
+    .gallery__row{
+        display: block;
+    }
+    .gallery__item_horizontal{
+        width:95%;
+    }
+    .gallery__item_horizontal:hover{
+        width:100%;
+    }
+    footer:hover{
+        padding: 12px;
+        font-size: 1.5rem;
+    }
+    
 }
