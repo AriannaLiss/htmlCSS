@@ -7,10 +7,11 @@
     <title>Dupper Bully</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
     <header>
-        <div class="header">
+        <div class="header container">
             <ul class="menu">
                 <li class="header__item">
                     <a href="#">
@@ -52,8 +53,8 @@
     </header>
     <main>
         <section>
-            <div class="gallery screen">
-                <div class="gallery__column">
+            <div class="gallery screen container">
+                <div class="gallery__column gallery__column-vertical">
                     <div class="gallery__foto">
                         <img src="./img/foto1.png" alt="child">
                     </div>
@@ -74,7 +75,7 @@
                         <img src="./img/foto5.png" alt="beard">
                     </div>
                 </div>
-                <div class="gallery__column">
+                <div class="gallery__column gallery__column-vertical">
                     <div class="gallery__foto">
                         <img src="./img/foto6.png" alt="boy">
                     </div>
@@ -83,7 +84,10 @@
         </section>
         <section>
             <div class="anchor" id="services"></div>
-            <div class="services screen">
+            <div class="services screen container">
+                <div class="services__foto">
+                    <img src="./img/pants.png" alt="nice pants">
+                </div>
                 <div class="circle-gallery">
                     <div class="circle-gallery__item">
                         <p class="circle-gallery__text">
@@ -119,43 +123,39 @@
                     </div>
 
                 </div>
-                <div class="services__foto">
-                    <img src="./img/pants.png" alt="nice pants">
-                </div>
             </div>
         </section>
         <section >
             <div class="anchor" id="team"></div>
-            <div class="team screen">
+            <div class="team screen container">
                 <h1>Meet Our Highly Skilled Experts</h1>
                 <div class="team-gallery">
-                    <div class="team-gallery__item">
-                        <img src="./img/expert1.png" alt="expert">
-                        <div class="team-gallery__name">
-                            <p>
-                                Meredith
-                            </p>
+                    <div class="team-gallery__row">
+                        <div class="team-gallery__item">
+                            <img src="./img/expert1.png" alt="expert">
+                            <div class="team-gallery__name">
+                                <p>Meredith</p>
+                            </div>
+                        </div>
+                        <div class="team-gallery__item">
+                            <img src="./img/expert2.png" alt="expert">                        
+                            <div class="team-gallery__name">
+                                <p>Jason</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="team-gallery__item">
-                        <img src="./img/expert2.png" alt="expert">                        <div class="team-gallery__name">
-                            <p>
-                                Jason
-                            </p>
+                    <div class="team-gallery__row">
+                        <div class="team-gallery__item">
+                            <img src="./img/expert3.png" alt="expert">
+                            <div class="team-gallery__name">
+                                <p>Ryan</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="team-gallery__item">
-                        <img src="./img/expert3.png" alt="expert">                        <div class="team-gallery__name">
-                            <p>
-                                Ryan
-                            </p>
-                        </div>
-                    </div>
-                    <div class="team-gallery__item">
-                        <img src="./img/expert4.png" alt="expert">                        <div class="team-gallery__name">
-                            <p>
-                                James
-                            </p>
+                        <div class="team-gallery__item">
+                            <img src="./img/expert4.png" alt="expert">
+                            <div class="team-gallery__name">
+                                <p>James</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
         </section>
         <section>
             <div class="anchor" id="reviews"></div>
-            <div class="contact">
+            <div class="contact container">
                 <div class="contact__main">
                     <div class="contact__form-container">
                         <h2>
@@ -171,20 +171,22 @@
                         </h2>
                         <form>
                             <table>
-                                <tr>
-                                    <td>
-                                        <input type="text" id="name" placeholder="Name">
-                                    </td>
-                                    <td>
-                                        <input type="email" id="email" placeholder="Email">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <textarea id="message" placeholder="Message" rows="5"></textarea>
-                                            </textarea>
-                                    </td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" id="name" placeholder="Name">
+                                        </td>
+                                        <td>
+                                            <input type="email" id="email" placeholder="Email">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <textarea id="message" placeholder="Message" rows="5"></textarea>
+                                                </textarea>
+                                        </td>
+                                    </tr>
+                                </tbody>   
                             </table>
                         </form>
                     </div>
@@ -196,32 +198,34 @@
         </section>
     </main>                
     <footer>
-        <div class="footer" id="contact">
-            <div class="footer__contacts">
-                Email : <a href="mailto:kumarpratiyush1405@gmail.com">kumarpratiyush1405@gmail.com</a><br>      
-                Phone : <a href="tel:+(972)723429834">+(972) 723429834</a><br>
-                Headquarters : <a href="https://goo.gl/maps/F8udnZPi4s6P3EfK7" target="_blank">836th Avenue, 3rd Floor,<br>
-                New York,<br>
-                New York</a>
-            </div>
-            <div class="footer__hours">
-                <h3>Opening Hours</h3>
+        <div class="container">
+            <div class="footer" id="contact">
+                <div class="footer__contacts">
+                    Email : <a href="mailto:kumarpratiyush1405@gmail.com">kumarpratiyush1405@gmail.com</a><br>      
+                    Phone : <a href="tel:+(972)723429834">+(972) 723429834</a><br>
+                    Headquarters : <a href="https://goo.gl/maps/F8udnZPi4s6P3EfK7" target="_blank">836th Avenue, 3rd Floor,<br>
+                    New York,<br>
+                    New York</a>
+                </div>
+                <div class="footer__hours">
+                    <h3>Opening Hours</h3>
 
-                Monday - Friday : 10:00 am - 05:00 pm <br>
-                Saturday : 10:00 am - 02:00 pm
-            </div>
-            <div class="footer__social">
-                Connect With Us On
-                <div class="footer__social-links">
-                    <a href="https://www.instagram.com/dapperbully/" target="_blank">
-                    <img src="./img/inst.png" alt="instagram">
-                    Instagram</a>
-                    <a href="https://www.facebook.com/dapperbully/" target="_blank">
-                    <img src="./img/fb.png" alt="facebook">
-                    Facebook</a>
-                    <a href="https://twitter.com/dapperbully" target="_blank">
-                    <img src="./img/twitter.png" alt="twitter">
-                    Twitter</a>
+                    Monday - Friday : 10:00 am - 05:00 pm <br>
+                    Saturday : 10:00 am - 02:00 pm
+                </div>
+                <div class="footer__social">
+                    Connect With Us On
+                    <div class="footer__social-links">
+                        <a href="https://www.instagram.com/dapperbully/" target="_blank">
+                        <img src="./img/inst.png" alt="instagram">
+                        Instagram</a>
+                        <a href="https://www.facebook.com/dapperbully/" target="_blank">
+                        <img src="./img/fb.png" alt="facebook">
+                        Facebook</a>
+                        <a href="https://twitter.com/dapperbully" target="_blank">
+                        <img src="./img/twitter.png" alt="twitter">
+                        Twitter</a>
+                    </div>
                 </div>
             </div>
         </div>
