@@ -232,6 +232,7 @@ h2{
 
 .team-gallery__item{
     width:45%;
+    min-width:auto;
     min-height:75vh;
     overflow: hidden;    
     text-align: center;
