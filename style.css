@@ -60,7 +60,7 @@ h1:hover{
 
 .gallery__row{
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items:flex-end;
 }
 
@@ -78,7 +78,7 @@ h1:hover{
 }
 
 .gallery__item_horizontal{
-    width:48%;
+    margin:1%;
 }
 
 .gallery__item:hover,.gallery__item_horizontal:hover{
@@ -115,6 +115,7 @@ footer:hover{
     }
     .gallery__item_horizontal{
         width:95%;
+        margin: 2% auto 4%;
     }
     .gallery__item_horizontal:hover{
         width:100%;
