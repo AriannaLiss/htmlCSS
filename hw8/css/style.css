@@ -42,54 +42,41 @@ h2{
     height: 9.9vh;
 }
 
-.header{
-    height:10vh;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    font-size:3.6rem;
-    line-height: 4.2rem;
-    background-color: black;;
+.delete-spaces{
+    --bs-navbar-padding-y:0;
+    --bs-navbar-padding-x:0;
 }
 
-.container{
-    width:100%;
+.my-container{
+    max-width:100%;
+    padding-left:0;
 }
 
 /* header menu */
 
-.header a{
-    display: block;
-    text-decoration: none;
+.header{
+    font-size:3.6rem;
+    line-height: 4.2rem;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    background-color: white;
+.navbar-brand img{
+    height: 10vh;
 }
 
-.logo a{
-    height: 100%;
-}
-
-.logo img{
-    height:100%;
-    vertical-align: middle;
-}
-
-.menu{
-    margin:0;
-    align-self: stretch;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-}
-
-.menu a{
+.navbar-nav a{
     color:#FFFCFC;
-    padding: 3rem;
+    padding: 1.5rem 0;
+    margin: 0 1rem;
+    text-align: center;
+ }
+.header a:hover{
+    color:#FFFCFC;
+}
+
+.header__nav-icon{
+    width:5rem;
+    height:5rem;
+    max-height: 7vh;
 }
 
 /* gallery */
@@ -97,7 +84,7 @@ h2{
 .gallery{
     padding: 2%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: stretch;
 }
 
@@ -430,17 +417,6 @@ textarea{
     50%{right:-100%;}
     to{right:0;}
 }
-
-/* @keyframes circleGallery{
-    from, to{ top:0; left:30%; }
-    12%{ top:7%; left:53% }
-    25%{ top:30%; left:60%; }
-    38%{ top:53%; left:53% }
-    50%{ top:60%; left:30%; }
-    63%{ top:53%; left:7%; }
-    75%{ top:30%; left:0; }
-    88%{ top:7%; left:7%; }
-} */
 
 @keyframes circleGallery{
     from, to{ top:1%; left:0; }
