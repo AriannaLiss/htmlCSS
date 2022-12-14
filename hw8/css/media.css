@@ -138,6 +138,10 @@
         align-items: center;
     }
 
+    .team-gallery__item{
+        width: 90%;
+    }
+    
     /* contact */
 
     .contact__main{
