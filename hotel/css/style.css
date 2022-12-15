@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Open+Sans:wght@400;600&family=Work+Sans:wght@500&display=swap");
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+:root {
+  font-family: "Open Sans";
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.header {
+  background-color: #EAEFF6;
+}
+.header__nav {
+  padding: 1rem 0;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #353637;
+  font-size: 1.8rem;
+}
+.nav__menu {
+  width: 45.6756756757%;
+  height: 100%;
+  display: flex;
+  text-transform: capitalize;
+  justify-content: space-between;
+}
+.nav__menu a {
+  color: #353637;
+}
+.nav__menu a:hover {
+  color: #597193;
+  border-bottom: 1.5px solid #597193;
+}
+.nav__item {
+  padding: 1rem;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: #597193;
+  font-weight: 600;
+  font-size: 2.6rem;
+  display: flex;
+  align-items: baseline;
+}
+.logo p {
+  margin-left: 0.8rem;
+}
+
+.btn {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #597193;
+  border-radius: 0.5rem;
+  height: 4rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.2509803922);
+}
+.btn__text {
+  margin: 0.5rem 2rem;
+}
