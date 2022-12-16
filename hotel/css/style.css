@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
   color: #353637;
   font-family: "Average Sans";
   font-weight: 600;
@@ -111,13 +111,11 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   padding: 1rem;
   white-space: nowrap;
+  border-bottom: 1.5px solid #EAEFF6;
 }
 .nav__menu a:hover {
   color: #597193;
   border-bottom: 1.5px solid #597193;
-}
-.nav__item {
-  padding: 1rem;
 }
 
 .logo {
@@ -142,8 +140,106 @@ h1, h2, h3, h4, h5, h6 {
   height: 4rem;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.2509803922);
   padding: 0.5rem 2rem;
+  white-space: nowrap;
 }
 
+.play-btn {
+  cursor: pointer;
+  display: block;
+  height: 4rem;
+  background: url("../img/play.svg") 0 -0.8rem no-repeat;
+  padding: 1.3rem 6rem;
+  font-size: 1.6rem;
+  color: #353637;
+}
+
+.header__body {
+  display: flex;
+}
 .header__info {
   width: 40.7207207207%;
+  margin-top: 17.6rem;
+}
+.header__title {
+  font-weight: 600;
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+  padding-bottom: 1.6rem;
+  color: #3D4550;
+}
+.header__text {
+  font-family: "Average Sans";
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #939393;
+  padding-bottom: 2rem;
+}
+.header__bg {
+  display: flex;
+  align-items: flex-end;
+  margin: 13rem -10.3rem 0 0;
+  position: relative;
+}
+.header__stat {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  z-index: 2;
+}
+.header__stat:first-of-type {
+  margin-bottom: 7.1rem;
+}
+.header__stat:nth-of-type(3) {
+  margin: 4.7rem 0 0 1.8rem;
+  align-self: flex-start;
+}
+.header__img {
+  margin: 0 2.1rem;
+  z-index: 2;
+}
+.header__circle {
+  position: absolute;
+}
+.header__circle_giant {
+  left: 10.3rem;
+  top: -4.1rem;
+  width: 54rem;
+  height: 54rem;
+  background-color: #F6FCFA;
+  border-radius: 27rem;
+}
+.header__circle_big {
+  width: 4.1rem;
+  height: 4.1rem;
+  border-radius: 2rem;
+  background-color: #C9D6E9;
+  right: 4.6rem;
+  top: -4.1rem;
+}
+.header__circle_middle {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 1.4rem;
+  background-color: #C9D6E9;
+  right: 2.9rem;
+  bottom: 8.3rem;
+}
+.header__circle_small {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 1rem;
+  background-color: #C9D6E9;
+  left: 7.3rem;
+  top: 5.5rem;
+}
+
+.info__btns {
+  display: flex;
+  padding: 1.6rem 0;
+}
+.info__video-btn {
+  display: block;
+}
+.info__play-btn {
+  margin: 0 0 0 5rem;
 }
