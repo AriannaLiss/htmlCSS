@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav__menu a:hover {
   color: #597193;
-  border-bottom: 1.5px solid #597193;
+  border-bottom-color: #597193;
 }
 
 .logo {
@@ -199,6 +199,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__circle {
   position: absolute;
+}
+.header__circle_dark, .header__stat {
+  transition: transform 1s ease-in;
+}
+.header__circle_dark:hover, .header__stat:hover {
+  transform: scale(1.1);
 }
 .header__circle_giant {
   left: 10.3rem;

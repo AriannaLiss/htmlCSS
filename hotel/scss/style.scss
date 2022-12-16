@@ -49,7 +49,7 @@ $black: #353637;
         }
         a:hover{
             color: $grey;
-            border-bottom: 1.5px solid $grey;
+            border-bottom-color: $grey;
         }
     }
 }
@@ -149,6 +149,13 @@ $black: #353637;
         position: absolute;
     }
 
+    &__circle_dark, &__stat{
+        transition: transform 1s ease-in;
+        &:hover{
+            transform:scale(1.1);
+        }
+    }
+
     &__circle_giant{
         left:10.3rem;
         top:-4.1rem;
@@ -193,9 +200,6 @@ $black: #353637;
         padding: 1.6rem 0;
     }
 
-    &__btn {
-    }
-
     &__video-btn {
 
         display: block;
@@ -205,6 +209,4 @@ $black: #353637;
          margin: 0 0 0 5rem;
         
     }
-
-    &__play-txt {}
 }
