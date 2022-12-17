@@ -85,10 +85,6 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-.header {
-  background-color: #EAEFF6;
-}
-
 .container {
   max-width: 1110px;
   margin: 0 auto;
@@ -152,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   display: block;
   height: 4rem;
-  background: url("../img/play.svg") 0 -0.8rem no-repeat;
+  background: url("../img/pic/play.svg") 0 -0.8rem no-repeat;
   padding: 1.3rem 6rem;
   font-size: 1.6rem;
   color: #353637;
@@ -164,6 +160,9 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 1.6rem;
 }
 
+.header {
+  background-color: #EAEFF6;
+}
 .header__body {
   display: flex;
 }
@@ -345,8 +344,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #636461;
   border: 1px solid #ABABAB;
   background: none;
+  border-radius: 2px;
 }
-.check-in__form select > option {
+.check-in__form select {
   text-transform: capitalize;
 }
 .check-in__form input:last-child {
@@ -355,7 +355,29 @@ h1, h2, h3, h4, h5, h6 {
   color: #222426;
   font-size: 1.4rem;
   border-color: #596B86;
+  transition: background-color 1s ease;
+}
+.check-in__form input:last-child:hover {
+  background-color: #B1BED0;
 }
 .check-in__container {
   margin: 7rem 6.8rem;
+}
+
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  background: url("../img/pic/calendar.png") no-repeat;
+  width:2rem;
+  height:2rem;
+  padding-right: .5rem;
+}
+
+select {
+  background-image: url("../img/pic/arrow.svg")!important;
+  background-repeat: no-repeat!important;
+  background-position: right 1.5rem center!important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }

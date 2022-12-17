@@ -8,6 +8,7 @@ $grey-bg: #EAEFF6;
 $grey: #597193;
 $dark-grey: #3D4550;
 $black: #353637;
+$footer-color: #B1BED0;
 
 :root{
     font-family: "Open Sans";
@@ -22,10 +23,6 @@ $black: #353637;
     overflow: hidden;
 }
 
-.header{
-    background-color: $grey-bg;
-
-}
 .container{
     max-width: $container-width;
     margin: 0 auto;
@@ -90,7 +87,7 @@ $black: #353637;
     cursor: pointer;
     display: block;
     height: 4rem;
-    background: url("../img/play.svg") 0 -0.8rem no-repeat;
+    background: url("../img/pic/play.svg") 0 -0.8rem no-repeat;
     padding: 1.3rem 6rem;
     font-size: 1.6rem;
     color: $black;
@@ -103,6 +100,8 @@ $black: #353637;
 }
 
 .header {
+
+    background-color: $grey-bg;
 
     &__body{
         display: flex;
@@ -225,7 +224,7 @@ $black: #353637;
 }
 
 .footer{
-    background-color: #B1BED0;
+    background-color: $footer-color;
 
     &__row {
         display: flex;
@@ -276,7 +275,7 @@ $black: #353637;
 .check-in {
     display: flex;
     &__img {
-        background-color: #B1BED0;
+        background-color: $footer-color;
         padding-top: 9rem;
         flex: 0 1 auto;
         display: flex;
@@ -314,8 +313,9 @@ $black: #353637;
             color: #636461;
             border:1px solid #ABABAB;
             background: none;
+            border-radius: 2px;
         }
-        select > option{
+        select{
             text-transform: capitalize;
         }
         input:last-child{
@@ -324,10 +324,30 @@ $black: #353637;
             color: #222426;
             font-size: 1.4rem;
             border-color: #596B86;
+            transition:background-color 1s ease;
         }
+        input:last-child:hover{
+            background-color: $footer-color;
+        }
+        
     }
     &__container{
         margin: 7rem 6.8rem;
     }
 }
 
+input[type="date"]{
+    background-image: url("../img/pic/calendar.png");
+    background-position: right 1rem center;
+    background-repeat: no-repeat;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+    opacity:0;
+}
+
+select{
+    background-image: url("../img/pic/arrow.png");
+    background-position: right;
+    appearance: none;
+}
