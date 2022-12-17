@@ -32,7 +32,7 @@
                 </nav>
                 <div class="header__body">
                     <div class="header__info info">
-                        <h1 class="header__title">Discover a hotel<br/>
+                        <h1 class="title header__title">Discover a hotel<br/>
                             that defies a new
                             dimension of luxury.</h1>
                         <p class="header__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
@@ -54,12 +54,46 @@
             </div>
         </header>
         <main class="main">
+            <section class="section section-light">
+                <div class="container">
+                    <div class="sec-header">
+                        <h1 class="title sec-header__title">Check Availability</h1>
+                        <div class="sec-header__quoter">
+                            It is a long established fact that a reader will be distracted by the readable content of a page.
+                        </div>
+                    </div>
+                    <div class="check-in">
+                        <div class="check-in__img"><img src="./img/checkin.png" alt="building"></div>
+                        
+                        <form action="" class="check-in__form">
+                            <div class="check-in__container">
+                                <label for="check-in">check-in</label>
+                                <input type="date" id="check-in" name="check-in" placeholder="Thu, 21 Jul 2022" data-date="21 Jul 2022" data-date-format="DD MMM YYYY">
+                                
+                                <label for="check-out">check-out</label>
+                                <input type="date" id="check-out" name="check-out" value="Fri, 22 Jul 2022">
+                                
+                                <label for="guests">guests</label>
+                                <select name="guests" id="guests-select">
+                                    <option value="1">1 room</option>
+                                    <option value="2">2 room</option>
+                                    <option value="3">3 room</option>
+                                    <option value="4">4 room</option>
+                                    <option value="5">5 room</option>
+                                </select>   
+                                <input type="submit" value="check availability">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </section>
 
         </main>
         <footer class="footer">
             <div class="container">
                 <div class="footer__row">
-                    <a class="footer__copyright">
+                    <a class="footer__copyright" href="#">
                         ©HOTEL Official 2022
                     </a>
                     <ul class="footer__nav">
