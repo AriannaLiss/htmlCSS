@@ -78,11 +78,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 .header {
   background-color: #EAEFF6;
-}
-.header__nav {
-  padding: 1rem 0;
 }
 
 .container {
@@ -91,6 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav {
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -248,4 +252,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 .info__play-btn {
   margin: 0 0 0 5rem;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
+  background-color: #B1BED0;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright {
+  display: block;
+  font-family: "Work Sans";
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.42);
+  padding: 2.2rem 0;
+}
+.footer__nav {
+  display: flex;
+}
+.footer__nav li {
+  margin-left: 1rem;
+}
+.footer__item {
+  display: block;
+  padding: 2.2rem 0;
+  color: rgba(0, 0, 0, 0.42);
 }
