@@ -262,6 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
+  margin-top: 13rem;
   background-color: #B1BED0;
 }
 .footer__row {
@@ -294,6 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .sec-header__title {
   color: #353637;
+  text-transform: capitalize;
 }
 .sec-header__quoter {
   color: #959595;
@@ -364,20 +366,82 @@ h1, h2, h3, h4, h5, h6 {
   margin: 7rem 6.8rem;
 }
 
+input[type=date] {
+  background-image: url("../img/pic/calendar.png");
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
+}
 
 input[type=date]::-webkit-calendar-picker-indicator {
-  opacity: 1;
-  background: url("../img/pic/calendar.png") no-repeat;
-  width:2rem;
-  height:2rem;
-  padding-right: .5rem;
+  opacity: 0;
 }
 
 select {
-  background-image: url("../img/pic/arrow.svg")!important;
-  background-repeat: no-repeat!important;
-  background-position: right 1.5rem center!important;
+  background-image: url("../img/pic/arrow.png");
+  background-position: right;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.section-popular__rooms {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery {
+  margin: 0 -1.5rem;
+}
+.gallery__column {
+  margin: 0 1.5rem;
+  width: 30%;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+.gallery__column img {
+  width: 100%;
+}
+.gallery__description {
+  padding: 1.4rem 2.2rem;
+  border: 1px solid #596B86;
+  color: #585858;
+  font-size: 1.8rem;
+  line-height: 4.5rem;
+  text-transform: capitalize;
+  flex: 1 1 auto;
+}
+.gallery__title {
+  color: #131313;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+.gallery__icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery__point {
+  margin: 1rem 1.7rem 0.5rem 0;
+  color: #727272;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  font-weight: 300;
+  white-space: nowrap;
+}
+.gallery__point-square {
+  background: url("../img/pic/gallery-square.svg") no-repeat left center;
+  padding-left: 1.8rem;
+}
+.gallery__point-bed {
+  background: url("../img/pic/gallery-bed.svg") no-repeat left center;
+  padding-left: 2.4rem;
+}
+.gallery__point-bath {
+  background: url("../img/pic/gallery-bath.svg") no-repeat left center;
+  padding-left: 2.2rem;
+}
+.gallery__price {
+  font-weight: 600;
+  font-size: 3rem;
+  color: #384D6C;
 }

@@ -224,6 +224,7 @@ $footer-color: #B1BED0;
 }
 
 .footer{
+    margin-top: 13rem;
     background-color: $footer-color;
 
     &__row {
@@ -260,6 +261,7 @@ $footer-color: #B1BED0;
 
     &__title {
         color: $black;
+        text-transform: capitalize;
     }
 
     &__quoter {
@@ -350,4 +352,78 @@ select{
     background-image: url("../img/pic/arrow.png");
     background-position: right;
     appearance: none;
+}
+
+.section-popular {
+
+		&__rooms {
+            display: flex;
+            justify-content: space-between;
+        }
+}
+.gallery {
+
+        margin: 0 -1.5rem;
+
+		&__column {
+            margin: 0 1.5rem;
+            width:30%;
+            display: flex;
+            flex:1 1 auto;
+            flex-direction: column;
+            img{
+                width:100%;
+            }
+        }
+
+		&__description {
+            padding: 1.4rem 2.2rem;
+            border: 1px solid #596B86;
+            color: #585858;
+            font-size: 1.8rem;
+            line-height: 4.5rem;
+            text-transform: capitalize;
+            flex: 1 1 auto;
+        }
+
+		&__title {
+            color: #131313;
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+
+		&__icons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+		&__point {
+            margin: 1rem 1.7rem .5rem 0;
+            color: #727272;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            font-weight: 300; //light
+            white-space: nowrap;
+        }
+
+		&__point-square {
+            background: url("../img/pic/gallery-square.svg") no-repeat left center;
+            padding-left: 1.8rem;
+        }
+
+		&__point-bed {
+            background: url("../img/pic/gallery-bed.svg") no-repeat left center;
+            padding-left: 2.4rem;
+        }
+
+		&__point-bath {
+            background: url("../img/pic/gallery-bath.svg") no-repeat left center;
+            padding-left: 2.2rem;
+        }
+
+		&__price {
+            font-weight: 600;//semi-bold
+            font-size: 3rem;
+            color: #384D6C;
+        }
 }
