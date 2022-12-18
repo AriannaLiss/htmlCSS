@@ -73,6 +73,7 @@ $footer-color: #B1BED0;
 
 .btn{
     text-transform: capitalize;
+    font-family: "Open Sans";
     font-size: 1.6rem;
     color: #fff;
     background-color: $grey;
@@ -87,11 +88,13 @@ $footer-color: #B1BED0;
     cursor: pointer;
     display: block;
     height: 4rem;
-    background: url("../img/pic/play.svg") 0 -0.8rem no-repeat;
-    padding: 1.3rem 6rem;
+    background: url("../img/pic/play.svg") -1.2rem -0.8rem no-repeat;
+    padding: 1.3rem 1rem 1.3rem 5rem;
     font-size: 1.6rem;
+    font-family: "Open Sans";
     line-height: 1.6rem;
     color: $black;
+    white-space: nowrap;
 }
 
 .title{
@@ -110,7 +113,8 @@ $footer-color: #B1BED0;
 
     &__info {
         width: 452 / 1110 * 100%;
-        margin-top: 17.6rem;
+        margin: 14.6rem 0 0 0;
+        padding: 3rem 0;
     }
 
     &__quote {
@@ -206,16 +210,16 @@ $footer-color: #B1BED0;
 
     &__btns {
         display: flex;
+        flex-wrap: wrap;
+        margin: -1rem 0 0 -2.5rem;
+    }
+
+    &__btn{
+        margin: 1rem 2.5rem;
     }
 
     &__video-btn {
-
         display: block;
-    }
-
-    &__play-btn {
-         margin: 0 0 0 5rem;
-        
     }
 }
 
@@ -561,7 +565,7 @@ select{
     }
 
     &__text {
-        padding: 8.5rem 6.2rem;
+        padding: 8.5rem 6.2rem 7rem;
         background-color: #F6FCFA;
         font-family: "Average Sans";
         font-size: 1.6rem;

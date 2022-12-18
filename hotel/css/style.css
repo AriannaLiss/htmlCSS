@@ -134,6 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
   text-transform: capitalize;
+  font-family: "Open Sans";
   font-size: 1.6rem;
   color: #fff;
   background-color: #597193;
@@ -148,11 +149,13 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   display: block;
   height: 4rem;
-  background: url("../img/pic/play.svg") 0 -0.8rem no-repeat;
-  padding: 1.3rem 6rem;
+  background: url("../img/pic/play.svg") -1.2rem -0.8rem no-repeat;
+  padding: 1.3rem 1rem 1.3rem 5rem;
   font-size: 1.6rem;
+  font-family: "Open Sans";
   line-height: 1.6rem;
   color: #353637;
+  white-space: nowrap;
 }
 
 .title {
@@ -169,7 +172,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__info {
   width: 40.7207207207%;
-  margin-top: 17.6rem;
+  margin: 14.6rem 0 0 0;
+  padding: 3rem 0;
 }
 .header__quote {
   font-weight: 600;
@@ -249,12 +253,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .info__btns {
   display: flex;
+  flex-wrap: wrap;
+  margin: -1rem 0 0 -2.5rem;
+}
+.info__btn {
+  margin: 1rem 2.5rem;
 }
 .info__video-btn {
   display: block;
-}
-.info__play-btn {
-  margin: 0 0 0 5rem;
 }
 
 .main {
@@ -553,7 +559,7 @@ select {
   display: flex;
 }
 .history__text {
-  padding: 8.5rem 6.2rem;
+  padding: 8.5rem 6.2rem 7rem;
   background-color: #F6FCFA;
   font-family: "Average Sans";
   font-size: 1.6rem;
