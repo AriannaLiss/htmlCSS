@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Open+Sans:wght@400;600&family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Open+Sans:wght@300;400;600&family=Work+Sans:wght@500&display=swap');
 @import "_null";
 
 $container-width:1110px;
@@ -48,7 +48,7 @@ $footer-color: #B1BED0;
             display: inline-block;
             padding: 1rem;
             white-space: nowrap;
-            border-bottom: 1.5px solid $grey-bg;
+            border-bottom: 1.5px solid rgba(0, 0, 0, 0);
         }
         a:hover{
             color: $grey;
@@ -112,7 +112,7 @@ $footer-color: #B1BED0;
         margin-top: 17.6rem;
     }
 
-    &__title {
+    &__quote {
         font-weight: 600;
         color: $dark-grey;
     }
@@ -253,21 +253,37 @@ $footer-color: #B1BED0;
         padding: 2.2rem 0;
         color: rgba(0, 0, 0, 0.42);
     }
+
+    &__item:hover{
+        color: $grey;
+        text-decoration: underline;
+    }
+
 }
 
 .sec-header {
     text-align: center;
-    padding: 12.1rem 0 4.6rem;
+    padding: 12.1rem 0 2.8rem;
 
     &__title {
         color: $black;
         text-transform: capitalize;
     }
 
+    &__subtitle{
+        font-family: "Average Sans";
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        letter-spacing: .4rem;
+        margin-bottom: 1.9rem;
+        color: $grey;
+        text-transform: uppercase;
+    }
+
     &__quoter {
         color: $grey-on-white;
         width: 45rem;
-        margin: 0 auto;
+        margin: 0 auto 2.8rem;
         font-size: 1.8rem;
         line-height: 2.8rem;
     }
@@ -354,7 +370,7 @@ select{
     appearance: none;
 }
 
-.section-popular {
+.popular {
 
 		&__rooms {
             display: flex;
@@ -402,7 +418,7 @@ select{
             color: #727272;
             font-size: 1.2rem;
             line-height: 1.7rem;
-            font-weight: 300; //light
+            font-weight: 300; 
             white-space: nowrap;
         }
 
@@ -422,8 +438,119 @@ select{
         }
 
 		&__price {
-            font-weight: 600;//semi-bold
+            font-weight: 600;
             font-size: 3rem;
             color: #384D6C;
         }
 }
+
+.services {
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -1.5rem;
+    }
+    
+    &__item {
+        
+        border: 1px solid #596B86;
+        padding: 2rem 3rem;
+        margin: 1.5rem;
+        flex: 1 1 30%;
+        background-position: top 2rem right 3rem;
+        background-repeat: no-repeat;
+        background-size: auto 5rem;
+
+        &_pick-up {
+            background-image: url("../img/services/pickup.svg");
+        }
+        
+        &_parking {
+            background-image: url("../img/services/parking.svg");
+        }
+        
+        &_room {
+            background-image: url("../img/services/room-services.svg");
+        }
+        
+        &_swimming {
+            background-image: url("../img/services/swimming.svg");
+        }
+        
+        &_internet {
+            background-image: url("../img/services/internet.svg");
+        }
+        
+        &_breakfast {
+            background-image: url("../img/services/breakfast.svg");
+            .services__title{
+                margin-right: 7.5rem;
+            }
+        }
+    }
+    
+    &__title {
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+        color: #131313;
+        margin: 1.6rem 6rem 1.6rem 0;
+    }
+    
+    &__desctiption {
+        font-family: "Average Sans";
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: #9B9B9B;
+    }
+
+    &__statistic {
+        margin-top: 11.8rem;
+    }
+}
+
+.pipe-list {
+    display: flex;
+    justify-content: stretch;
+
+
+    &__item {
+        padding: 0 1rem;;
+        flex: 1 1 auto;
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    &__item:not(:last-child):after {
+        content:"";
+        background: #C3C3C3;
+        width:1.5px;
+        height:58%;
+        position: absolute;
+        top:21%;
+        right:0;
+    }
+
+    &__content{
+        display: inline-block;
+    }
+
+    &__title {
+        font-size: 5rem;
+        line-height: 5.5rem;
+        color: #596B86;
+        font-weight: 600;//bold;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        font-family: "Average Sans";
+        color: $light-grey;
+        text-align: left;
+    }
+}
+
