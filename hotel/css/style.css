@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Open+Sans:wght@300;400;600&family=Work+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Merriweather:wght@300&family=Open+Sans:wght@300;400;600&family=Work+Sans:wght@500&display=swap");
 /*normalazing*/
 * {
   padding: 0;
@@ -609,4 +609,86 @@ select {
 }
 .video__play img {
   width: 70%;
+}
+
+.customers__header {
+  margin: 12rem 0 2rem;
+}
+.customers__title {
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #353637;
+  text-transform: capitalize;
+  margin-bottom: 1.3rem;
+}
+.customers__quote {
+  color: #959595;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.1rem;
+}
+.customers__row {
+  display: flex;
+  margin: 2rem -1.5rem;
+}
+.customers__row ::after {
+  content: "";
+}
+.customers__card {
+  width: 33.333%;
+  margin: 2.6rem 1.5rem 0;
+  background-color: #F6FCFA;
+  padding: 5rem 3.7rem;
+  border-radius: 0.6rem;
+}
+.customers__card_active, .customers__card:focus {
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  margin: 0 1.5rem 2.6rem;
+  background-color: rgba(113, 136, 170, 0.55);
+  background-image: url(../img/pic/bg.svg), url(../img/pic/bg.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom left;
+  background-size: 5.4rem 5.4rem, 14.4rem 14.4rem;
+  border-radius: 0.6rem 0 0.6rem 0.6rem;
+}
+.customers__card_active *, .customers__card:focus * {
+  color: white !important;
+}
+.customers__ava {
+  width: 8.3rem;
+  height: 8.3rem;
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.customers__ava img {
+  width: 100%;
+  height: auto;
+}
+.customers__name {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: #101828;
+  margin: 2.4rem 0 0.6rem;
+  text-transform: capitalize;
+}
+.customers__company {
+  text-transform: capitalize;
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #606772;
+  margin-bottom: 2.7rem;
+}
+.customers__comment {
+  font-family: "Merriweather";
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02rem;
+  color: #6D7589;
 }
