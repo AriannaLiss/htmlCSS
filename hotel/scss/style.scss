@@ -374,15 +374,10 @@ select{
     appearance: none;
 }
 
-.popular {
-
-		&__rooms {
-            display: flex;
-            justify-content: space-between;
-        }
-}
 .gallery {
 
+        display: flex;
+        justify-content: space-between;
         margin: 0 -1.5rem;
 
 		&__column {
@@ -391,6 +386,8 @@ select{
             display: flex;
             flex:1 1 auto;
             flex-direction: column;
+            border-radius: .5rem .5rem 0 0;
+            overflow: hidden;
             img{
                 width:100%;
             }
@@ -427,17 +424,17 @@ select{
         }
 
 		&__point-square {
-            background: url("../img/pic/gallery-square.svg") no-repeat left center;
+            background: url("../img/pic/gallery/square.svg") no-repeat left center;
             padding-left: 1.8rem;
         }
 
 		&__point-bed {
-            background: url("../img/pic/gallery-bed.svg") no-repeat left center;
+            background: url("../img/pic/gallery/bed.svg") no-repeat left center;
             padding-left: 2.4rem;
         }
 
 		&__point-bath {
-            background: url("../img/pic/gallery-bath.svg") no-repeat left center;
+            background: url("../img/pic/gallery/bath.svg") no-repeat left center;
             padding-left: 2.2rem;
         }
 
