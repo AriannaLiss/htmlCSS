@@ -291,6 +291,10 @@ $footer-color: #B1BED0;
         font-size: 1.8rem;
         line-height: 2.8rem;
     }
+
+    &_left{
+        text-align: left;
+    }
 }
 
 
@@ -311,6 +315,7 @@ $footer-color: #B1BED0;
         background-image: url(../img/form_img.png);
         background-position: top right -1px;
         background-repeat: no-repeat;
+        background-size: 7.4rem;
         flex: 1 0 47rem;//42.79%;
         align-self: stretch;
         display: flex;
@@ -379,16 +384,24 @@ select{
         display: flex;
         justify-content: space-between;
         margin: 0 -1.5rem;
+        
+        &__dot{
+            background-color: #597193;
+            width: 1.6rem;
+            height:1rem;
+            border-radius: .5rem;
+        }
 
 		&__column {
             margin: 0 1.5rem;
             width:30%;
+            min-width: 22rem;
             display: flex;
             flex:1 1 auto;
             flex-direction: column;
             border-radius: .5rem .5rem 0 0;
             overflow: hidden;
-            img{
+            & img{
                 width:100%;
             }
         }
@@ -409,6 +422,15 @@ select{
             line-height: 3rem;
         }
 
+        &__text {
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            color: #9B9B9B;
+            letter-spacing: .1rem;
+            margin: .5rem 0;
+            text-transform: none;
+        }
+
 		&__icons {
             display: flex;
             flex-wrap: wrap;
@@ -421,27 +443,61 @@ select{
             line-height: 1.7rem;
             font-weight: 300; 
             white-space: nowrap;
-        }
 
-		&__point-square {
-            background: url("../img/pic/gallery/square.svg") no-repeat left center;
-            padding-left: 1.8rem;
-        }
+            &_big {
+                font-size:1.5rem;
+                line-height: 2.5rem;
+                color:#797979;
+                margin: 0 1rem .8rem 0;
+                min-width:8rem;
+                width:45%;
+                a{
+                    color:#797979;
+                }
+            }
+        
 
-		&__point-bed {
-            background: url("../img/pic/gallery/bed.svg") no-repeat left center;
-            padding-left: 2.4rem;
-        }
+            &-square {
+                background: url("../img/pic/gallery/square.svg") no-repeat left center;
+                padding-left: 1.8rem;
+            }
 
-		&__point-bath {
-            background: url("../img/pic/gallery/bath.svg") no-repeat left center;
-            padding-left: 2.2rem;
+            &-bed {
+                background: url("../img/pic/gallery/bed.svg") no-repeat left center;
+                padding-left: 2.4rem;
+            }
+
+            &-bath {
+                background: url("../img/pic/gallery/bath.svg") no-repeat left center;
+                padding-left: 2.2rem;
+            }
+
+            &-earth{
+                background: url("../img/pic/gallery/earth.svg") no-repeat left center;
+                padding-left: 2.6rem;
+            }
+
+            &-msg{
+                background: url("../img/pic/gallery/msg.svg") no-repeat left .5rem;
+                padding-left: 2.5rem;
+            }
+
         }
 
 		&__price {
             font-weight: 600;
             font-size: 3rem;
             color: #384D6C;
+        }
+
+        &__read-more {
+            margin: 1.5rem 0 1rem;
+            padding-right: 3.2rem;
+            color: #596B86;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            display: inline-block;
+            background: url(../img/pic/gallery/arrow.svg) no-repeat right 1rem;
         }
 }
 
@@ -564,6 +620,10 @@ select{
     &__text {
         padding: 8.5rem 6.2rem 7rem;
         background-color: #F6FCFA;
+        background-image: url(../img/form_img.png);
+        background-position: bottom right -1px;
+        background-repeat: no-repeat;
+        background-size: 7.7rem;
         font-family: "Average Sans";
         font-size: 1.6rem;
         line-height: 2.6rem;
@@ -657,7 +717,8 @@ select{
         background-color: #F6FCFA;
         padding: 5rem 3.7rem;
         border-radius: .6rem;
-        &_active, &:focus{
+        transition: margin 1s ease;;
+        &:hover{
             box-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.25);
             margin: 0 1.5rem 2.6rem;
             background-color: rgba(113, 136, 170, 0.55);
@@ -712,5 +773,29 @@ select{
         line-height: 2.6rem;
         letter-spacing: 0.02rem;
         color: #6D7589;
+    }
+}
+
+.dots{
+    width:8.8rem;
+    height:1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 7rem auto 0;
+
+    &__dot{
+        display: block;
+        border-radius: .5rem;
+    }
+
+    &__dot_small{
+        background-color:rgba(177, 190, 208, 0.66);
+        width:1.6rem;
+    }
+
+    &__dot_long{
+        background-color: #597193;
+        width:2.6rem;
     }
 }
