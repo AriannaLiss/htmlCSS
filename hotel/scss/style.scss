@@ -228,7 +228,7 @@ $footer-color: #B1BED0;
 }
 
 .footer{
-    margin-top: 13rem;
+    margin-top: 7.7rem;
     background-color: $footer-color;
 
     &__row {
@@ -798,4 +798,89 @@ select{
         background-color: #597193;
         width:2.6rem;
     }
+}
+
+.contacts {
+
+    text-align: center;
+    font-family: 'Average Sans';
+    letter-spacing: .5px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #A9A9A9;
+    margin-top: 8.6rem;
+
+    &__frame {
+        border: 1px solid #7587A0;
+        padding: 4.4rem;
+        display: inline-block;
+    }
+
+    &__container{
+        columns: 3 200px;
+        column-fill: auto;
+        column-gap:8.6rem;
+        text-align: left;
+        break-inside: auto;
+    }
+
+    // &__column {}
+
+    &__logo {
+        margin-bottom:2rem;
+    }
+
+    &__title {
+        font-family: 'Open Sans';
+        font-size: 2rem;
+        line-height: 2.6rem;
+        color: #131313;
+        text-transform: capitalize;
+        margin: 1.6rem 0;
+        letter-spacing: normal;
+        * {
+            letter-spacing: .5rem;;
+            font-size: 1.4rem;
+            line-height: 3rem;
+        }
+    }
+
+    &__list{
+        & a{
+            display: block;
+            color: #A9A9A9;
+            padding: .6rem 0 .6rem 3.3rem;
+        }
+    }
+
+    &__geo {
+        background: url("../img/pic/contacts/geo.svg") no-repeat left center;
+    }
+
+    &__tel {
+        background: url("../img/pic/contacts/tel.svg") no-repeat left center;
+    }
+
+    &__email {
+        background: url("../img/pic/contacts/email.svg") no-repeat left center;
+    }
+
+    &__socials {
+        margin-bottom: .4rem;
+        a{
+            display: inline-block;
+            padding: .8rem;
+            border: 1px solid #D9D9D9;
+            border-radius: .4rem;
+            margin-right: 1.5rem;
+            line-height: 1.6rem;
+            // width: 3.2rem;
+            img{
+                width: 1.6rem;
+                height: 1.6rem;
+            }
+        }
+    }
+
+    // &__social {}
 }
