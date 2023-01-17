@@ -16,6 +16,10 @@ $footer-color: #B1BED0;
     font-weight: 400;
 }
 
+::placeholder{
+    color:#a1a1a1;
+}
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -300,6 +304,8 @@ $footer-color: #B1BED0;
 
 .check-in {
     display: flex;
+    border-radius: .8rem 0 .8rem .8rem;
+    overflow: hidden;
     &__img {
         background-color: $footer-color;
         padding-top: 9rem;
@@ -800,6 +806,64 @@ select{
     }
 }
 
+.intouch {
+
+    margin-top: 13rem;
+
+    &__container {
+        background-color: #B1BED0;
+        background-image: url(../img/pic/bg.svg),url(../img/pic/bg.svg);
+        background-repeat: no-repeat,no-repeat;
+        background-position: top right, bottom left;
+        background-size: 8rem 8rem, 10rem 10rem;
+        border-radius: 1rem 0 1rem 1rem;
+        padding: 7.3rem;
+        text-align: center;
+    }
+
+    &__title {
+        color:white;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        letter-spacing: .35rem;
+        font-family: 'Average Sans';
+        font-weight: 300;
+    }
+
+    &__text {
+        color:#334052;
+        font-size: 4rem;
+        line-height: 5rem;
+        margin: 2.5rem auto 4.4rem;
+    }
+
+
+    form{
+        display: inline-block;
+        background-color: white;
+        border-radius: .6rem;
+        overflow: hidden;
+        box-shadow: 0 .2rem 1.2rem rgba(52, 52, 52, 0.15);
+
+        input{
+            width: 34rem;
+            font-size: 1.4rem;
+            line-height: 5rem;
+            padding-left: 2rem;
+        }
+
+        button{
+            background-color: #889cb9;
+            color:white;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            padding: 1.3rem 1.5rem;
+            box-shadow: -.1rem .2rem 1.2rem rgba(0, 0, 0, 0.15);
+            border-radius: .6rem;
+        }
+    }
+}
+
 .contacts {
 
     text-align: center;
@@ -821,13 +885,14 @@ select{
         column-fill: auto;
         column-gap:8.6rem;
         text-align: left;
-        break-inside: auto;
     }
 
-    // &__column {}
+    &__column{
+        break-inside: avoid;
+    }
 
     &__logo {
-        margin-bottom:2rem;
+        margin-bottom:3rem;
     }
 
     &__title {
@@ -837,6 +902,7 @@ select{
         color: #131313;
         text-transform: capitalize;
         margin: 1.6rem 0;
+        padding-top:2.6rem;
         letter-spacing: normal;
         * {
             letter-spacing: .5rem;;
@@ -846,6 +912,7 @@ select{
     }
 
     &__list{
+        padding: .2rem 0;
         & a{
             display: block;
             color: #A9A9A9;
@@ -874,13 +941,10 @@ select{
             border-radius: .4rem;
             margin-right: 1.5rem;
             line-height: 1.6rem;
-            // width: 3.2rem;
             img{
                 width: 1.6rem;
                 height: 1.6rem;
             }
         }
     }
-
-    // &__social {}
 }
