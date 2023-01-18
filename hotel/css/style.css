@@ -134,6 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
   display: flex;
   align-items: baseline;
+  margin-bottom: 1rem;
 }
 .logo p {
   display: inline;
@@ -325,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 2.4rem;
   letter-spacing: 0.4rem;
   margin-bottom: 1.9rem;
-  color: #597193;
+  color: #7587A0;
   text-transform: uppercase;
 }
 .sec-header__quoter {
@@ -414,8 +415,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 select {
-  background-image: url("../img/pic/arrow.png");
-  background-position: right;
+  background: url("../img/pic/arrow.svg") no-repeat right 2rem center !important;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -784,7 +784,7 @@ select {
 }
 .intouch__container {
   background-color: #B1BED0;
-  background-image: url(../img/pic/bg.svg), url(../img/pic/bg.svg);
+  background-image: url(../img/pic/bg-light.svg), url(../img/pic/bg-light.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: top right, bottom left;
   background-size: 8rem 8rem, 10rem 10rem;
@@ -857,7 +857,7 @@ select {
        break-inside: avoid;
 }
 .contacts__logo {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .contacts__title {
   font-family: "Open Sans";

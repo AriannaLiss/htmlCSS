@@ -64,6 +64,7 @@ $footer-color: #B1BED0;
 .logo{  
     display: flex;
     align-items: baseline;
+    margin-bottom:1rem;
     p{
         display: inline;
         text-transform: uppercase;
@@ -284,7 +285,7 @@ $footer-color: #B1BED0;
         line-height: 2.4rem;
         letter-spacing: .4rem;
         margin-bottom: 1.9rem;
-        color: $grey;
+        color: #7587A0;
         text-transform: uppercase;
     }
 
@@ -370,9 +371,7 @@ $footer-color: #B1BED0;
 }
 
 input[type="date"]{
-    background-image: url("../img/pic/calendar.png");
-    background-position: right 1rem center;
-    background-repeat: no-repeat;
+    background: url("../img/pic/calendar.svg") no-repeat right 1.5rem center;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator{
@@ -380,8 +379,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 
 select{
-    background-image: url("../img/pic/arrow.png");
-    background-position: right;
+    background: url("../img/pic/arrow.svg") no-repeat right 2rem center!important;
     appearance: none;
 }
 
@@ -805,20 +803,20 @@ select{
         width:2.6rem;
     }
 }
-
 .intouch {
 
     margin-top: 13rem;
 
     &__container {
         background-color: #B1BED0;
-        background-image: url(../img/pic/bg.svg),url(../img/pic/bg.svg);
+        background-image: url(../img/pic/bg-light.svg),url(../img/pic/bg-light.svg);
         background-repeat: no-repeat,no-repeat;
         background-position: top right, bottom left;
         background-size: 8rem 8rem, 10rem 10rem;
         border-radius: 1rem 0 1rem 1rem;
         padding: 7.3rem;
         text-align: center;
+
     }
 
     &__title {
@@ -892,7 +890,7 @@ select{
     }
 
     &__logo {
-        margin-bottom:3rem;
+        margin-bottom:2rem;
     }
 
     &__title {
